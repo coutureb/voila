@@ -1,14 +1,5 @@
 name: Tests
 
-on:
-  push:
-    branches:
-      - '*'
-  pull_request:
-    branches:
-      - '*'
-  schedule:
-    - cron: '0 2 * * 1-5' # run on weekdays at 2:00am UTC
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
